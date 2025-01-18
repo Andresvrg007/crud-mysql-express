@@ -1,0 +1,2 @@
+# crud-mysql-express
+I CREATED A CRUD USING JS, EXPRESS AND MYSQL
