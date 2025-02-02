@@ -12,11 +12,11 @@ const arr=[];
 
 app.get("/",(req,res)=>{
     const db = mysql.createConnection({
-        host: 'localhost', // Cambia a tu host si es necesario
+        host: 'mysql.railway.internal', // Cambia a tu host si es necesario
         user: 'root', // Usuario de tu base de datos
-        password: 'Andres07321', // Contraseña de tu base de datos
-        database: 'hello_sql', // Nombre de tu base de datos
-        port: 3307
+        password: 'EWFhmyrcCAhnFnkmSPuZNGtdMIZmDyMb', // Contraseña de tu base de datos
+        database: 'railway', // Nombre de tu base de datos
+        port: 3306
     });
 
     db.connect((err) => {
@@ -47,13 +47,12 @@ app.post("/",(req,res)=>{
     
 
     const db = mysql.createConnection({
-        host: 'localhost', // Cambia a tu host si es necesario
+        host: 'mysql.railway.internal', // Cambia a tu host si es necesario
         user: 'root', // Usuario de tu base de datos
-        password: 'Andres07321', // Contraseña de tu base de datos
-        database: 'hello_sql', // Nombre de tu base de datos
-        port: 3307
+        password: 'EWFhmyrcCAhnFnkmSPuZNGtdMIZmDyMb', // Contraseña de tu base de datos
+        database: 'railway', // Nombre de tu base de datos
+        port: 3306
     });
-
 
     db.connect((err) => {
         if (err) {
@@ -93,11 +92,11 @@ app.delete("/:id",(req,res)=>{
     const id = req.params.id; // Recoge el ID desde la consulta
     //console.log('ID recibido:', id); // Imprime el ID en la consola del backend
     const db = mysql.createConnection({
-        host: 'localhost', // Cambia a tu host si es necesario
+        host: 'mysql.railway.internal', // Cambia a tu host si es necesario
         user: 'root', // Usuario de tu base de datos
-        password: 'Andres07321', // Contraseña de tu base de datos
-        database: 'hello_sql', // Nombre de tu base de datos
-        port: 3307
+        password: 'EWFhmyrcCAhnFnkmSPuZNGtdMIZmDyMb', // Contraseña de tu base de datos
+        database: 'railway', // Nombre de tu base de datos
+        port: 3306
     });
 
     db.connect((err) => {
@@ -131,11 +130,11 @@ app.delete("/:id",(req,res)=>{
 
 app.put("/:id",(req,res)=>{
     const db = mysql.createConnection({
-        host: 'localhost', // Cambia a tu host si es necesario
+        host: 'mysql.railway.internal', // Cambia a tu host si es necesario
         user: 'root', // Usuario de tu base de datos
-        password: 'Andres07321', // Contraseña de tu base de datos
-        database: 'hello_sql', // Nombre de tu base de datos
-        port: 3307
+        password: 'EWFhmyrcCAhnFnkmSPuZNGtdMIZmDyMb', // Contraseña de tu base de datos
+        database: 'railway', // Nombre de tu base de datos
+        port: 3306
     });
 
     db.connect((err) => {
