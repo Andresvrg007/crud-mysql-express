@@ -12,7 +12,7 @@ const $email= d.querySelector("#email");
 let edit=false;
 async function getUsers(params) {
     
-    await fetch("http://localhost:4000")
+    await fetch("https://crud-mysql-express-production.up.railway.app/")
     .then(res=>{
         if(!res.ok) throw new Error('Error en la solicitud')
             return res.json()

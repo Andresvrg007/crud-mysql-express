@@ -5,7 +5,11 @@ const mysql=require('mysql');
 
 const app= express();
 
-app.use(cors());
+app.use(cors({
+    origin: "*", // Permitir todas las conexiones
+    methods: "GET,POST,PUT,DELETE",
+    allowedHeaders: "Content-Type"
+  }));
 app.use(express.json());
 
 const arr=[];
